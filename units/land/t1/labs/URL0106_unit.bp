@@ -1,10 +1,10 @@
---Hunter
+#Hunter
 
 UnitBlueprint {
 Merge = true,
 BlueprintId = "url0106",
-    
-    Buffs = {
+
+	Buffs = {
         Regen = {
             Level1 = 2,
             Level2 = 3,
@@ -12,68 +12,43 @@ BlueprintId = "url0106",
             Level4 = 5,
             Level5 = 6,
         },
-        Stun = {
-            Add = {
+		Stun = {
+		    Add = {
                 OnDeath = true,
                 OnImpact = true,
             },
             AppliedToTarget = true,
             BuffType = 'STUN',
-            Duration = 1.5,
-            Radius = 6,
+            Duration = 1,
+            Radius = 10,
             TargetAllow = 'MOBILE, LAND',
-            TargetDisallow = 'TECH3, COMMAND, EXPERIMENTAL',
+			TargetDisallow = 'TECH3, COMMAND, EXPERIMENTAL',
         },
-    },
-    BuildIconSortPriority = 30,
-    Categories = {
-        'PRODUCTSC1',
-        'SELECTABLE',
-        'BUILTBYTIER1FACTORY',
-        'BUILTBYTIER2FACTORY',
-        'BUILTBYTIER3FACTORY',
-        'CYBRAN',
-        'MOBILE',
-        'LAND',
-        'TECH1',
-        'DIRECTFIRE',
-        'VISIBLETORECON',
-        'RECLAIMABLE',
-        'BOT',
-        'OVERLAYDIRECTFIRE',
     },
     Defense = {
-        AirThreatLevel = 0,
-        ArmorType = 'Normal',
-        EconomyThreatLevel = 0,
         Health = 100,
         MaxHealth = 100,
-        RegenRate = 0,
-        SubThreatLevel = 0,
-        SurfaceThreatLevel = 0.33,
     },
-    Description = '<LOC url0106_desc>Light Assault Bot',
     Display = {
-        Abilities = {
+		Abilities = {
             '<LOC ability_stun>EMP Weapon',
         },
-        
     },
     Economy = {
         BuildCostEnergy = 300,
         BuildCostMass = 30,
         BuildTime = 150,
     },
-    
     Physics = {
         MaxAcceleration = 4.3,
         MaxBrake = 4.3,
         MaxSpeed = 4.3,
     },
-    SizeX = 0.7,
-    SizeY = 0.6,
-    SizeZ = 0.7,
-    
+
+    SizeX = 0.8,
+    SizeY = 0.65,
+    SizeZ = 0.8,
+	
     Veteran = {
         Level1 = 1,
         Level2 = 2,
@@ -82,26 +57,25 @@ BlueprintId = "url0106",
         Level5 = 5,
     },
     Weapon = {
-        {
-        
-            Damage = 8,    --24dps
-            MaxRadius = 13,
-            MuzzleVelocity = 25,
+		{
+            Damage = 7,	#21dps
+            MaxRadius = 16,
+            MuzzleVelocity = 35,	#from 25
+            ProjectilesPerOnFire = 3,
             RateOfFire = 1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
-                'RADAR',
-                'MOBILE ENGINNER',
-                'COMMAND',                --ACU hight priority for ghetto sniping
-                'TECH1 MOBILE',
+				'TECH1 MOBILE RADAR',
+				'COMMAND',				#ACU hight priority for ghetto sniping
+				'TECH1 MOBILE',
                 'TECH2 MOBILE',
                 'TECH3 MOBILE',
                 'STRUCTURE DEFENSE',
                 'SPECIALLOWPRI',
                 'ALLUNITS',
-            },
+			},
         },
-        {
+		{
             AboveWaterTargetsOnly = true,
             Accurate = true,
             BallisticArc = 'RULEUBA_None',
@@ -119,7 +93,7 @@ BlueprintId = "url0106",
             FiringTolerance = 2,
             IgnoreIfDisabled = true,
             Label = 'EMP',
-            MaxRadius = 6,
+            MaxRadius = 10,
             MuzzleVelocity = 0,
             ProjectileId = '/projectiles/CIFEMP01/CIFEMP01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
@@ -131,7 +105,7 @@ BlueprintId = "url0106",
                     RackBone = 0,
                 },
             },
-            RangeCategory = 'UWRC_IndirectFire',        --from direct
+            RangeCategory = 'UWRC_IndirectFire',		#from direct
             RateOfFire = 0.5,
             SalvoSize = 1,
             SlavedToBody = true,

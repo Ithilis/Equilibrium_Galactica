@@ -1,4 +1,4 @@
---Striker
+#Striker
 
 UnitBlueprint {
 Merge = true,
@@ -9,11 +9,11 @@ BlueprintId = "uel0201",
         BuildCostMass = 60,
         BuildTime = 300,
     },
-    Defense = {
-        Health = 400,
-        MaxHealth = 400,
+	Defense = {
+        Health = 450,
+        MaxHealth = 450,
     },
-    Buffs = {
+	Buffs = {
         Regen = {
             Level1 = 2,
             Level2 = 3,
@@ -22,21 +22,23 @@ BlueprintId = "uel0201",
             Level5 = 6,
         },
     },
-    Physics = {
-        MaxAcceleration = 3.4,
-        MaxSpeed = 3.4,             --from 3,4
-        MaxSteerForce = 3.4, 
+	Physics = {
+        MaxAcceleration = 3.45,
+        MaxSpeed = 3.45, 			#from 3,4
+        MaxSteerForce = 3.45, 
     },
-    Veteran = {
+	Veteran = {
         Level1 = 2,
         Level2 = 4,
         Level3 = 6,
         Level4 = 8,
         Level5 = 10,
     },
-    Weapon = {
-        {
-        Damage = 22,        --from 24 = 22dps
-        },
-    },
+	Weapon = {
+		{
+		Damage = 24,		#from 24
+		MaxRadius = 20,
+		RateOfFire = 1,
+		},
+	},
 }

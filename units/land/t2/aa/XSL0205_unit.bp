@@ -25,11 +25,10 @@ BlueprintId = "xsl0205",
     },
     Weapon = {
         {
-        Damage = 70,
+        Damage = 80,
         DamageRadius = 3,        --from 4
         MuzzleVelocity = 60,    --from 20
         MaxRadius = 38,            --from 40
-        RateOfFire = 2,
         TargetPriorities = {
                 'SPECIALHIGHPRI',
                 'EXPERIMENTAL',
@@ -65,8 +64,12 @@ BlueprintId = "xsl0205",
             SlavedToBody = true,
             TargetCheckInterval = 2,
             TargetRestrictDisallow = 'UNTARGETABLE',
+            TrackingRadius = 1.15,
+            TurretDualManipulators = false,
+            Turreted = false,
             WeaponCategory = 'Missile',
-
+            WeaponRepackTimeout = 0,
+            WeaponUnpacks = false,
         },
     },
 }
