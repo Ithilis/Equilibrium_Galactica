@@ -38,7 +38,7 @@ UnitBlueprint {
             BuildTime = 10000,                --from 8400
         },            
         HeavyAntiMatterCannon = {
-            NewMaxRadius = 28,        --from 30
+            NewMaxRadius = 30,        --from 30
         },
         LeftPod = {
             BuildCostEnergy = 2250,
@@ -101,16 +101,22 @@ UnitBlueprint {
             BuildTime = 5000,            --from 4200
         },
     },
+    Intel = {
+        OmniRadius = 28,    --from 26
+    },
+    Physics = {
+        MaxAcceleration = 1.8,
+        MaxSpeed = 1.8,
+    },
     Veteran = {
         RequirementMult = 0.5,
     },    
     Weapon = {
         {
-        MaxRadius = 23,  --from 22
-        TargetPriorities = {
+        MaxRadius = 25,  --from 22
+            TargetPriorities = {
                 'SPECIALHIGHPRI',
                 'MOBILE TECH1 BOT',
-                'MOBILE ENGINNER',
                 'MOBILE TECH1 TANK',
                 'MOBILE TECH1',
                 'MOBILE TECH2',
@@ -124,7 +130,7 @@ UnitBlueprint {
         },
         {
         DamageType = 'Overcharge',
-        MaxRadius = 23,  --from 22 
+        MaxRadius = 25,  --from 22 
         RateOfFire = 0.25,            --from 0,3= 4s
         TurretPitchSpeed = 100,    --from 90
         TurretYawSpeed = 100,

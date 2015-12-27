@@ -96,6 +96,13 @@ BlueprintId = "ual0001",
             BuildTime = 5000,            --from 4200
         },
     },
+    Intel = {
+        OmniRadius = 28,    --from 26
+    },
+    Physics = {
+        MaxAcceleration = 1.8,
+        MaxSpeed = 1.8,
+    },
     Transport = {
         CanFireFromTransport = true,
     },
@@ -104,11 +111,10 @@ BlueprintId = "ual0001",
     },
     Weapon = {
         {
-            MaxRadius = 23,  --from 22 
+            MaxRadius = 25,  --from 22
             TargetPriorities = {
                 'SPECIALHIGHPRI',
                 'MOBILE TECH1 BOT',
-                'MOBILE ENGINNER',
                 'MOBILE TECH1 TANK',
                 'MOBILE TECH1',
                 'MOBILE TECH2',
@@ -118,11 +124,11 @@ BlueprintId = "ual0001",
                 'ALLUNITS',
             },
             TurretPitchSpeed = 100,    --from 90
-            TurretYawSpeed = 100,
+            TurretYawSpeed = 100,            
         },
         {
             DamageType = 'Overcharge',
-            MaxRadius = 23,  --from 22 
+            MaxRadius = 25,  --from 22 
             RateOfFire = 0.25,            --from 0,3= 4s
             TurretPitchSpeed = 100,    --from 90
             TurretYawSpeed = 100,
@@ -135,7 +141,7 @@ BlueprintId = "ual0001",
                     },
                     BuffType = 'STUN',
                     Duration = 2,
-                    Radius = 38,
+                    Radius = 36,
                     TargetAllow = 'MOBILE',
                     TargetDisallow = 'EXPERIMENTAL,COMMAND',
                 },
@@ -148,7 +154,7 @@ BlueprintId = "ual0001",
                 Air = 'Land|Water|Air|Seabed',
             },
             
-            MaxRadius = 38,                    --from 35
+            MaxRadius = 36,                    --from 35
             RateOfFire = 0.25,                --from 5s
             
             EnergyDrainPerSecond = 400,        --from 200
