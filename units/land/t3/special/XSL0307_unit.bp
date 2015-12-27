@@ -21,8 +21,8 @@ BlueprintId = "xsl0307",
         'OVERLAYDEFENSE',
     },
     Defense = {
-        Health = 2000,    --from 400
-        MaxHealth = 2000,
+        Health = 1000,    --from 400
+        MaxHealth = 1000,
         RegenRate = 5,
         Shield = {
             ShieldRechargeTime = 50,
@@ -51,13 +51,15 @@ BlueprintId = "xsl0307",
             DamageType = 'Normal',
             DisplayName = 'Serpentine Missile',
             Label = 'MissileRack',
-            MaxRadius = 38,                            --its only for same behaviour 
+            MaxRadius = 36,                            --its only for same behaviour 
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
             RateOfFire = 0,
             RenderFireClock = true,
             SlavedToBody = true,
+            TargetCheckInterval = 2,
             TargetRestrictDisallow = 'UNTARGETABLE',
+            TrackingRadius = 1.15,
             TurretDualManipulators = false,
             Turreted = false,
             WeaponCategory = 'Missile',

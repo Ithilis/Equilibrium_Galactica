@@ -10,13 +10,13 @@ BlueprintId = "uel0106",
         BuildTime = 175,
     },
     Defense = {
-        Health = 145,
-        MaxHealth = 145,
+        Health = 165,
+        MaxHealth = 165,
     },
     Physics = {
-        MaxAcceleration = 4.2,
-        MaxBrake = 4.2,
-        MaxSpeed = 4.2,
+        MaxAcceleration = 4.4,
+        MaxBrake = 4.4,
+        MaxSpeed = 4.4,
     },
     Buffs = {
         Regen = {
@@ -37,11 +37,10 @@ BlueprintId = "uel0106",
     Weapon = {
         {
         Damage = 8.5,            --25.5dps
-        MaxRadius = 13,
+        MaxRadius = 16,
         TargetPriorities = {
                 'SPECIALHIGHPRI',
-                'RADAR',
-                'MOBILE ENGINNER',
+                'TECH1 MOBILE RADAR',
                 'COMMAND',                --ACU hight priority for ghetto sniping
                 'TECH1 MOBILE',
                 'TECH2 MOBILE',
@@ -52,6 +51,6 @@ BlueprintId = "uel0106",
             },
         },
     },
-    SizeX = 0.7,
-    SizeZ = 0.7,
+    SizeX = 0.8,
+    SizeZ = 0.8,
 }

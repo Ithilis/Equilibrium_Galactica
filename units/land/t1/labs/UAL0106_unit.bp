@@ -4,10 +4,9 @@ UnitBlueprint {
 Merge = true,
 BlueprintId = "ual0106",
 
-    
     Defense = {
-        Health = 125,
-        MaxHealth = 125,
+        Health = 150,
+        MaxHealth = 150,
     },
     Display = {
         Abilities = {
@@ -24,9 +23,9 @@ BlueprintId = "ual0106",
         VisionRadiusOnDeath = 28,
     },
     Physics = {
-        MaxAcceleration = 4.2,
-        MaxBrake = 4.2,
-        MaxSpeed = 4.2,
+        MaxAcceleration = 4.4,
+        MaxBrake = 4.4,
+        MaxSpeed = 4.4,
     },
     Buffs = {
         Regen = {
@@ -47,11 +46,11 @@ BlueprintId = "ual0106",
     Weapon = {
         {
         Damage = 8,            --24dps
-        MaxRadius = 13,
+        MaxRadius = 16,
+        MuzzleVelocity = 35,    --from 25
         TargetPriorities = {
                 'SPECIALHIGHPRI',
-                'RADAR',
-                'MOBILE ENGINNER',
+                'TECH1 MOBILE RADAR',
                 'COMMAND',                --ACU hight priority for ghetto sniping
                 'TECH1 MOBILE',
                 'TECH2 MOBILE',
@@ -62,6 +61,6 @@ BlueprintId = "ual0106",
             },
         },
     },
-    SizeX = 0.7,
-    SizeZ = 0.7,
+    SizeX = 0.8,
+    SizeZ = 0.8,
 }
