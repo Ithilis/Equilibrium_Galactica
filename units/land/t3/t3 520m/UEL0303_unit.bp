@@ -1,8 +1,8 @@
 --Titan
-
+    
 UnitBlueprint {
 Merge = true,
-   BlueprintId = "uel0303",
+BlueprintId = "uel0303",
 
     Economy = {
         BuildCostEnergy = 6500,
@@ -11,7 +11,7 @@ Merge = true,
         MaintenanceConsumptionPerSecondEnergy = 1,
     },
     Defense = {
-        Health = 2000,                --3100hp
+        Health = 2000,                --3000hp in total
         MaxHealth = 2000,
         Shield = {
             ShieldMaxHealth = 1000,
@@ -54,7 +54,7 @@ Merge = true,
         },
         },
     CollisionOffsetZ = 0.15,
-    SizeX = 1.2,
+    SizeX = 1.1,
     SizeY = 1.2,
-    SizeZ = 1,
+    SizeZ = 0.9,
 }
