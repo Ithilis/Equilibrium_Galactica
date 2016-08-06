@@ -1,0 +1,46 @@
+--Obsidian
+
+UnitBlueprint {
+Merge = true,
+BlueprintId = "ual0202",
+    
+    Economy = {
+        BuildCostEnergy = 1800,
+        BuildCostMass = 360,
+        BuildTime = 1800,
+        MaintenanceConsumptionPerSecondEnergy = 100,
+    },
+    Defense = {
+        Health = 1800,
+        MaxHealth = 1800,
+        Shield = {
+            ShieldMaxHealth = 2600,
+            ShieldRechargeTime = 60,    --from 75s
+            ShieldRegenRate = 20,        --from2
+        },
+    },
+    Display = {
+        UniformScale = 0.15, --from 0,1
+    },
+    Physics = {
+        MaxAcceleration = 2.65,
+        MaxBrake = 2.65,
+        MaxSpeed = 2.65,
+    },
+    Weapon = {
+            {
+            Damage = 400,
+            RateOfFire = 0.3,
+            TargetPriorities = {
+                'SPECIALHIGHPRI',
+                'COMMAND',            --acu is hight priority
+                'TECH3 MOBILE',
+                'TECH2 MOBILE',
+                'TECH1 MOBILE',
+                'STRUCTURE DEFENSE',
+                'SPECIALLOWPRI',
+                'ALLUNITS',
+            },
+            },
+    },
+}

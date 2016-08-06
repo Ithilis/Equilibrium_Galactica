@@ -1,0 +1,25 @@
+--Ilshavoh
+
+UnitBlueprint {
+Merge = true,
+BlueprintId = "xsl0202",
+    
+    Economy = {
+        BuildCostEnergy = 1800,
+        BuildCostMass = 360,
+        BuildTime = 1800,
+    },
+    Physics = {
+        MaxAcceleration = 2.8,
+        MaxBrake = 2.8,
+        MaxSpeed = 2.8,
+    },
+    Weapon = {
+        {
+        Damage = 40,    -- 120dps
+        MaxRadius = 23,
+        TurretPitchRange = 90,  --from 60, to help it shoot at units very close to it.
+        TurretYawSpeed = 180,   --from 70 = on prenerf value
+        },
+    },
+}

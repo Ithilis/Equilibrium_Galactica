@@ -1,0 +1,37 @@
+--Harbrinnger
+    
+UnitBlueprint {
+Merge = true,
+BlueprintId = "ual0303",
+    
+    Economy = {
+        BuildCostEnergy = 8400,
+        BuildCostMass = 840,
+        BuildTime = 4200,
+        BuildRate = 20,    --from3
+        MaintenanceConsumptionPerSecondEnergy = 1,
+        MaxBuildDistance = 10,
+    },
+    Defense = {
+        Health = 1200,            --4500hp
+        MaxHealth = 1200,
+        Shield = {
+            ShieldMaxHealth = 2000,        --from 1300
+            ShieldRechargeTime = 20,    --from 60s
+            ShieldRegenRate = 50,        --from 9
+            ShieldRegenStartTime = 0,
+        },
+    },
+    Physics = {
+        MaxAcceleration = 4.2,
+        MaxBrake = 4.2,
+        MaxSpeed = 4.2,
+    },
+    Weapon = {
+        {
+            Damage = 200,            --400dps
+            MaxRadius = 23,
+            RateOfFire = 2,
+        },
+    },
+}

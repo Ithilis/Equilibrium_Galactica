@@ -1,0 +1,37 @@
+--Percival
+
+UnitBlueprint {
+Merge = true,
+BlueprintId = "xel0305",
+
+    Economy = {
+        BuildCostEnergy = 10000,
+        BuildCostMass = 1000,
+        BuildTime = 5000,
+    },
+    Defense = {
+        Health = 5000,                
+        MaxHealth = 5000,
+    },
+    Intel = {
+        WaterVisionRadius = 5,    --from 26
+    },
+    Physics = {
+        MaxAcceleration = 2.0,
+        MaxBrake = 2.4,
+        MaxSpeed = 2.4,
+        MaxSpeedReverse = 2.4,
+    },
+    Weapon = {
+        {
+        Damage = 1125,            -- =375dps
+        MaxRadius = 28,
+        RateOfFire = 0.333,        --from 4s to 3s 
+        },
+    },
+    CollisionOffsetZ = -0.1,
+    SizeX = 1.2,
+    SizeY = 1.65,
+    SizeZ = 1.1,
+}    
+    
