@@ -1,0 +1,27 @@
+--Striker
+
+UnitBlueprint {
+Merge = true,
+BlueprintId = "uel0201",
+
+    Economy = {
+        BuildCostEnergy = 250,
+        BuildCostMass = 50,
+        BuildTime = 250,
+    },
+    Defense = {
+        Health = 400,
+        MaxHealth = 400,
+    },
+    Physics = {
+        MaxAcceleration = 3.4,
+        MaxSpeed = 3.4,             --from 3,4
+        MaxSteerForce = 3.4, 
+    },
+    Weapon = {
+        {
+        Damage = 25,        --from 24 = 18,75dps
+        RateOfFire = 0.75,
+        },
+    },
+}
